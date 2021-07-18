@@ -5,9 +5,7 @@ import Card from '../GenericUI/Card'
 import ExpenseItemDesc from './ExpenseItemDesc';
 
 const ExpenseItem = (expenseData) => {
-    console.log('ExpenseItem() function called!')
     const [title, setTitle] = useState(expenseData.title)
-    console.log(`Current title value: ${title}`)
     
     const postClickEvent = () => {
         setTitle('updated!')
